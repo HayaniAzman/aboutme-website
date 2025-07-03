@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/06bcca22e8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/contact.css">
+  <title>Contact Me</title>
+  <style>
+    body {
+      background-image: url("picture/plain.jpg");
+    }
+</style>
+</head>
+<body>
+  <div class="navbar">
+        <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+        <a href="skills.html"><i class="fa-solid fa-briefcase"></i> Skills</a>
+        <a href="gallery.html"><i class="fa-regular fa-image"></i> Gallery</a>
+        <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>If you have any questions or inquiries for me, feel free to get in touch!</p>
+
+    <div class="contact-info">
+      <a href="tel:+60179875015"><i clas s="fa-solid fa-phone"></i> Call: +60179875015</a>
+      <a href="nurulhayani2003@gmail.com"><i class="fa-solid fa-envelope"></i> Email: nurulhayani2003@gmail.com</a>
+      <a href="https://www.instagram.com/yanieyyy_/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram: @yanieyyy_</a>
+      <a href="https://wa.me/60179875015" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: +60179875015</a>
+    </div>
+
+    <form action="submit_form.php" method="POST" class="contact-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+<footer>
+  <p>&copy; 2025 Hayani Azman, All Rights Reserved.</p>
+</footer>
+</html>

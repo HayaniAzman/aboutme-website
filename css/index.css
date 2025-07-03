@@ -1,0 +1,190 @@
+header {
+    background: linear-gradient(45deg, #A0522D, #8B4513); /* Sienna to SaddleBrown gradient */
+    color: #F5DEB3; /* Wheat for header text */
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero {
+    position: relative;
+    background: url('picture/bg1.jpg') no-repeat center center fixed; /* Keep background image or change to a beige/brown one */
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5DEB3; /* Wheat for hero text */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 64, 51, 0.6); /* Dark brown overlay with transparency */
+    z-index: 1;
+}
+
+.hero-content 
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.profile-img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.hero a {
+    display: inline-block;
+    background: #D2B48C; /* Tan for button */
+    color: #5C4033; /* Dark brown for button text */
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.hero a:hover {
+    background: #BC8F8F; /* RosyBrown for button hover */
+    transform: scale(1.1);
+}
+
+nav {
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* SaddleBrown to Sienna gradient */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    margin-top: -50px;
+}
+
+nav a {
+    color: #F5DEB3; /* Wheat for nav links */
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #D2B48C; /* Tan for nav link hover */
+    transform: translateY(-5px);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #D2B48C; /* Tan for underline */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    text-align: center;
+    background: linear-gradient(45deg, #D2B48C, #BC8F8F); /* Tan to RosyBrown gradient */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+    animation: slideIn 1.5s ease-out;
+    color: #5C4033; /* Dark brown for section text */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* SaddleBrown to Sienna gradient */
+    color: #F5DEB3; /* Wheat for footer text */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

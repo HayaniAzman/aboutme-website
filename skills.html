@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience and Skills</title>
+    <link rel="stylesheet" href="css/skills.css">
+    <script src="https://kit.fontawesome.com/06bcca22e8.js" crossorigin="anonymous"></script>
+    <style>
+       body {
+    background-image: url("picture/BckGrnd.jpg");
+     }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+        <a href="skills.html"><i class="fa-solid fa-briefcase"></i> Skills</a>
+        <a href="gallery.html"><i class="fa-regular fa-image"></i> Gallery</a>
+        <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+    <div class="header">
+        <h1>Experience & Skills</h1>
+        <p>- My Professionalism -</p>
+    </div>
+</header>
+
+<section>
+    <h2>Practical Experience</h2>
+    <table>
+        <tr>
+            <th>Area</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Internships</td>
+            <td>Work at Pejabat Daerah dan Tanah </td>
+        </tr>
+        <tr>
+            <td>Volunteer</td>
+            <td>Event volunteer</td>
+        </tr>
+        <tr>
+            <td>UiTM</td>
+            <td>Joining clubs and competitions</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Soft Skills</h2>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td>Microsoft Word, PowerPoint, Canva</td>
+        </tr>
+         <tr>
+            <td>Language</td>
+            <td>Malay and English</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>&copy;2025 Hayani Azman, All Rights Reserved.</p>
+</footer>
+
+<button class="scroll-top" onclick="scrollToTop()">&#9650;</button>
+
+<script>
+    const scrollButton = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollButton.style.display = 'block';
+        } else {
+            scrollButton.style.display = 'none';
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

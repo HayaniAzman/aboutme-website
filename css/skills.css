@@ -1,0 +1,169 @@
+header {
+    background-color: rgba(139, 69, 19, 0.9); /* SaddleBrown with transparency */
+    color: #F5DEB3; /* Wheat for header text */
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #D2B48C; /* Tan for header paragraph */
+}
+
+nav {
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* SaddleBrown to Sienna gradient */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+nav a {
+    color: #F5DEB3; /* Wheat for nav links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #5C4033; /* Dark brown for nav link hover */
+    background-color: #D2B48C; /* Tan for nav link background hover */
+    transform: translateY(-5px);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #5C4033; /* Dark brown for underline */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #F5DEB3; /* Wheat for section background */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1200px;
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #8B4513; /* SaddleBrown for h2 */
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 2s ease;
+}
+
+table, th, td {
+    border: 1px solid #A0522D; /* Sienna for table borders */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #D2B48C; /* Tan for table headers */
+    color: #5C4033; /* Dark brown for table header text */
+}
+
+td {
+    background-color: #FFF8DC; /* Cornsilk for table cells */
+    color: #5C4033; /* Dark brown for table cell text */
+}
+
+table tr:hover {
+    background-color: #FAEBD7; /* AntiqueWhite for table row hover */
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+footer {
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* SaddleBrown to Sienna gradient */
+    color: #F5DEB3; /* Wheat for footer text */
+    text-align: center;
+    font-style: oblique;
+    padding: 30px;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #A0522D; /* Sienna for scroll-top button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.scroll-top:hover {
+    background: #8B4513; /* SaddleBrown for scroll-top button hover */
+    transition: 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

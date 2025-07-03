@@ -1,0 +1,257 @@
+header {
+    background-color: rgba(139, 69, 19, 0.9); /* SaddleBrown with transparency */
+    color: #F5DEB3; /* Wheat for header text */
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #D2B48C; /* Tan for header paragraph */
+}
+
+nav {
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* SaddleBrown to Sienna gradient */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+    margin-top: -10px;
+}
+
+nav a {
+    color: #F5DEB3; /* Wheat for nav links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #5C4033; /* Dark brown for nav link hover */
+    background-color: #D2B48C; /* Tan for nav link background hover */
+    transform: translateY(-5px);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #5C4033; /* Dark brown for underline */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Re-declaration of header styles, ensure consistency or remove redundancy */
+header {
+    text-align: center;
+    padding: 0px 0px;
+    background-image: url("picture/bg6.jpg"); /* Keep background image or change to a beige/brown one */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #D2B48C; /* Tan for header h1 */
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    border-radius: 15%;
+    transition: transform 0.3s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+header h2 {
+    margin-top: 10px;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #F5DEB3; /* Wheat for header h2 */
+}
+
+.introduction {
+    background-color: #D2B48C; /* RosyBrown */
+    color: #5C4033; /* White for introduction text */
+    padding: 40px 20px;
+    text-align: justify;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.introduction h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.introduction p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.biography {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.biography img {
+    width: 310px;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.biography img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.biography .text-content {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.biography h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #A0522D; /* Sienna for biography h3 */
+}
+
+.biography p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #5C4033; /* Dark brown for biography paragraph */
+}
+
+.info-section {
+    background-color: #D2B48C; /* Tan */
+    padding: 40px 20px;
+    color: #5C4033; /* Dark brown for info section text */
+}
+
+.info-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info-table div {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.info-table div:hover {
+    transform: translateY(-10px);
+}
+
+.info-table h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #8B4513; /* SaddleBrown for info table h4 */
+    text-align: left;
+}
+
+.info-table ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.info-table li {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #333; /* Keep original dark grey for list items or change to a darker brown */
+}
+
+footer {
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* SaddleBrown to Sienna gradient */
+    color: #F5DEB3; /* Wheat for footer text */
+    text-align: center;
+    font-style: oblique;
+    padding: 30px;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+img[src="picture/uitm.PNG"] {
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center it horizontally */
+    width: 100px; /* As specified in your HTML */
+}
+
+img[src="picture/smkm.jpg"] {
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center it horizontally */
+    width: 100px; /* As specified in your HTML */
+}
+
+img[src="picture/skm.jpg"] {
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center it horizontally */
+    width: 100px; /* As specified in your HTML */
+}
+img[src="picture/skpc.jpg"] {
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center it horizontally */
+    width: 100px; /* As specified in your HTML */
+}
+
+
